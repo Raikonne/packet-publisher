@@ -1,0 +1,11 @@
+logging:
+  level:
+    com.packet.publisher: INFO
+
+rabbitmq:
+  virtualhost: /feedme
+  host.1: 127.0.0.1
+  port.1: 5672
+  addresses: ${rabbitmq.host.1}:${rabbitmq.port.1}
+  username: rabbitmq
+  password: rabbitmq
